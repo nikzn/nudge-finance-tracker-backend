@@ -15,7 +15,7 @@ engine = create_engine(
     DATABASE_URL,
     pool_pre_ping=True,  # important for Railway idle connections
 )
-
+print("DATABASE_URL =", DATABASE_URL)
 SessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,
