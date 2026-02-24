@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     PASSWORD_MIN_LENGTH: int = 8
 
     # CORS
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:4200", "http://localhost:8000","https://nudge-finance-tracker-frontend-fv1o.vercel.app"]
+    ALLOWED_ORIGINS: List[str] = ["http://localhost:4200", "http://localhost:8000","https://nudge-finance-tracker-frontend-fv1o.vercel.app","https://nudgefinancetracker.vercel.app"]
 
     # File Upload
     UPLOAD_DIR: str = "./uploads"
