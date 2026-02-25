@@ -40,8 +40,7 @@ async def create_transaction(
     # Validate custom type if provided
     if transaction_data.custom_type_id:
         custom_type = db.query(CustomTransactionType).filter(
-            CustomTransactionType.id == transaction_data.custom_type_id,
-            CustomTransactionType.user_id == current_user.id
+            CustomTransactionType.id == transaction_data.custom_type_id
         ).first()
         if not custom_type:
             raise HTTPException(
